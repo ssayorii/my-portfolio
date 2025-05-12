@@ -1,29 +1,7 @@
-@import "tailwindcss";
-@import "tailwindcss/preflight";
-@tailwind utilities;
+@import "tailwindcss" layer(utilities);
+/* @import "tailwindcss/preflight" layer(utilities); */
+/* @import "tailwindcss/utilities" layer(utilities); */
 
-@layer base {
-  body {
-    @apply text-gray-800;
-  }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    @apply font-bold;
-  }
-}
-
-@layer components {
-  .section-title {
-    @apply text-3xl md:text-4xl font-bold uppercase mb-6;
-  }
-  .btn {
-    @apply px-6 py-2 border border-gray-300 rounded hover:bg-gray-50 transition-colors;
-  }
-  .btn-primary {
-    @apply border-red-500 text-red-500 hover:bg-red-50;
-  }
+@theme {
+  --font-sans: "Inter", "sans-serif";
 }
