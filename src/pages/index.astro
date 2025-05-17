@@ -9,10 +9,14 @@ import Contact from "../components/Contact.astro";
 ---
 
 <Layout title="Home">
-  <Navbar />
-  <Hero />
-  <Tools />
-  <Services />
-  <!-- <Projects />
-  <Contact /> -->
+  <div
+    class="min-h-screen w-full grid grid-rows-[auto_auto_auto_auto] border border-gray-200 max-[359px]:border-l-0 max-[359px]:border-r-0"
+  >
+    <header class="border-b border-gray-200"><Navbar /></header>
+    <section class="border-b border-gray-200"><Hero /></section>
+    <section class="border-b border-gray-200"><Tools /></section>
+    <section class="border-b border-gray-200"><Services /></section>
+    <section class="border-b border-gray-200"><Projects /></section>
+    <!-- <footer>...</footer> -->
+  </div>
 </Layout>
