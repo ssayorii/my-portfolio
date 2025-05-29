@@ -5,3 +5,22 @@
 @theme {
   --font-sans: "Inter", "sans-serif";
 }
+
+@keyframes pop-line {
+  0% {
+    transform: scaleX(0.5) scaleY(0.5);
+    opacity: 0.5;
+  }
+  60% {
+    transform: scaleX(1.2) scaleY(1.5);
+    opacity: 1;
+  }
+  100% {
+    transform: scaleX(1) scaleY(1);
+    opacity: 1;
+  }
+}
+
+.pop-animate {
+  animation: pop-line 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
