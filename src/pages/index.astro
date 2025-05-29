@@ -12,8 +12,10 @@ import Contact from "../components/Contact.astro";
   <div
     class="min-h-screen w-full grid grid-rows-[auto_auto_auto_auto] border border-gray-200 max-[359px]:border-l-0 max-[359px]:border-r-0"
   >
-    <header class="border-b border-gray-200 bg-white"><Navbar /></header>
-    <section class="border-b border-gray-200 bg-white"><Hero /></section>
+    <header class="border-b-0 border-gray-200 bg-white"><Navbar /></header>
+    <section class="border-b border-gray-200 bg-white border-t-0">
+      <Hero />
+    </section>
     <section class="border-b border-gray-200 bg-white"><Tools /></section>
     <section class="border-b border-gray-200 bg-white"><Services /></section>
     <section class="border-b border-gray-200 bg-white"><Projects /></section>
