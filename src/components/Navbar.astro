@@ -37,6 +37,50 @@
         if (target) {
           e.preventDefault();
           target.scrollIntoView({ behavior: "smooth" });
+
+          const sectionId = href.replace("#", "");
+          const underline = document.querySelector(
+            `.section-underline[data-section="${sectionId}"]`
+          );
+          if (underline) {
+            underline.classList.remove("pop-animate");
+            (underline as HTMLElement).offsetWidth;
+            underline.classList.add("pop-animate");
+
+            // Particle effect
+            const parent = underline.parentElement;
+            if (parent) {
+              for (let i = 0; i < 12; i++) {
+                const particle = document.createElement("div");
+                particle.className = "particle";
+                // Random angle and distance for a more natural burst
+                const angle = Math.random() * 2 * Math.PI;
+                const distance = 18 + Math.random() * 22;
+                particle.style.setProperty(
+                  "--dx",
+                  `${Math.cos(angle) * distance}px`
+                );
+                particle.style.setProperty(
+                  "--dy",
+                  `${Math.sin(angle) * distance}px`
+                );
+                // Random size and opacity
+                const size = 6 + Math.random() * 8;
+                particle.style.width = `${size}px`;
+                particle.style.height = `${size}px`;
+                particle.style.opacity = `${0.6 + Math.random() * 0.4}`;
+                // Position in the center of the underline
+                particle.style.left = "50%";
+                particle.style.top = "50%";
+                particle.style.transform = "translate(-50%, -50%)";
+                parent.appendChild(particle);
+                // Remove after animation
+                particle.addEventListener("animationend", () => {
+                  particle.remove();
+                });
+              }
+            }
+          }
         }
       });
     });

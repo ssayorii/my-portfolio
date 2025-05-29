@@ -24,3 +24,28 @@
 .pop-animate {
   animation: pop-line 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.particle {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #f87171; /* Tailwind red-400 */
+  border-radius: 50%;
+  pointer-events: none;
+  opacity: 0.8;
+  z-index: 10;
+  animation: particle-burst 0.8s forwards;
+}
+
+@keyframes particle-burst {
+  to {
+    transform: translate(var(--dx, 0), var(--dy, 0)) scale(0.5);
+    opacity: 0;
+  }
+}
+
+body {
+  background-color: #f9fafb; /* Optional: light gray for contrast */
+  background-image: radial-gradient(#d1d5db 1px, transparent 1px);
+  background-size: 24px 24px;
+}
