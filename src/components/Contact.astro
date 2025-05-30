@@ -3,17 +3,19 @@ import { FiMail, FiPhone, FiMapPin } from "react-icons/fi";
 import { FaTwitter, FaInstagram, FaLinkedinIn, FaGithub } from "react-icons/fa";
 ---
 
-<section id="contact" class="max-w-5xl mx-auto py-16 px-6 sm:px-12">
+<section id="contact" class="max-w-5xl mx-auto py-12 sm:py-16 px-4 sm:px-12">
   <div class="max-w-5xl mx-auto">
     <!-- Section Header -->
-    <div class="text-center mb-16">
+    <div class="text-center mb-8 sm:mb-16">
       <span class="text-red-400 font-bold tracking-wider uppercase text-sm"
         >Let's Connect</span
       >
-      <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-2">
+      <h2 class="text-2xl sm:text-4xl font-extrabold text-gray-900 mt-2">
         Ready to Start Your Project?
       </h2>
-      <div class="relative flex items-center justify-center mt-6 space-x-2">
+      <div
+        class="relative flex items-center justify-center mt-4 sm:mt-6 space-x-2"
+      >
         <div class="h-1 w-12 bg-red-400 rounded-full" data-section="contact">
         </div>
         <div class="h-1 w-24 bg-red-400 rounded-full" data-section="contact">
@@ -26,11 +28,11 @@ import { FaTwitter, FaInstagram, FaLinkedinIn, FaGithub } from "react-icons/fa";
 </section>
 
 <!-- Contact Card -->
-<div class="bg-white rounded-2xl shadow-xl overflow-hidden mb-20">
+<div class="bg-white rounded-2xl shadow-xl overflow-hidden mb-12 sm:mb-20">
   <div class="grid grid-cols-1 lg:grid-cols-5">
     <!-- Contact Info Side -->
     <div
-      class="lg:col-span-2 bg-gradient-to-br from-red-500 to-red-600 p-8 lg:p-12 text-white relative"
+      class="lg:col-span-2 bg-gradient-to-br from-red-500 to-red-600 p-6 sm:p-8 lg:p-12 text-white relative"
     >
       <div
         class="absolute top-0 right-0 -mt-10 -mr-10 w-40 h-40 bg-red-400 rounded-full opacity-20"
@@ -41,65 +43,85 @@ import { FaTwitter, FaInstagram, FaLinkedinIn, FaGithub } from "react-icons/fa";
       >
       </div>
 
-      <h3 class="text-2xl font-bold mb-8 relative">Get in Touch</h3>
+      <h3 class="text-xl sm:text-2xl font-bold mb-6 sm:mb-8 relative">
+        Get in Touch
+      </h3>
 
-      <div class="space-y-6 relative z-10">
+      <div class="space-y-4 sm:space-y-6 relative z-10">
         <div class="flex items-start">
-          <div class="bg-white/20 p-3 rounded-lg">
-            <FiMail style={{ width: 20, height: 20 }} />
+          <div class="bg-white/20 p-2 sm:p-3 rounded-lg">
+            <FiMail style={{ width: 18, height: 18 }} />
           </div>
-          <div class="ml-4">
-            <h4 class="text-lg font-semibold">Email</h4>
+          <div class="ml-3 sm:ml-4">
+            <h4 class="text-base sm:text-lg font-semibold">Email</h4>
             <a
               href="yazan4moh@gmail.com"
-              class="text-white/80 hover:text-white transition"
+              class="text-white/80 hover:text-white transition text-sm sm:text-base"
               >yazan4moh@gmail.com</a
+            >
+          </div>
+        </div>
+
+        <div class="flex items-start">
+          <div class="bg-white/20 p-2 sm:p-3 rounded-lg">
+            <FiPhone style={{ width: 18, height: 18 }} />
+          </div>
+          <div class="ml-3 sm:ml-4">
+            <h4 class="text-base sm:text-lg font-semibold">Phone</h4>
+            <a
+              href="tel:+201552066783"
+              class="text-white/80 hover:text-white transition text-sm sm:text-base"
+              >+201552066783</a
             >
           </div>
         </div>
       </div>
 
       <!-- Social Media Icons -->
-      <div class="mt-80 relative z-10">
-        <h4 class="text-lg font-semibold mb-4">Follow Me</h4>
-        <div class="flex space-x-3">
+      <div class="mt-12 sm:mt-20 md:mt-20 lg:mt-80 relative z-10">
+        <h4 class="text-base sm:text-lg font-semibold mb-3 sm:mb-4">
+          Follow Me
+        </h4>
+        <div class="flex space-x-2 sm:space-x-3">
           <a
             href="#"
-            class="bg-white/20 p-3 rounded-full hover:bg-white/30 transition"
+            class="bg-white/20 p-2 sm:p-3 rounded-full hover:bg-white/30 transition"
           >
-            <FaTwitter style={{ width: 20, height: 20 }} />
+            <FaTwitter style={{ width: 18, height: 18 }} />
           </a>
           <a
             href="#"
-            class="bg-white/20 p-3 rounded-full hover:bg-white/30 transition"
+            class="bg-white/20 p-2 sm:p-3 rounded-full hover:bg-white/30 transition"
           >
-            <FaInstagram style={{ width: 20, height: 20 }} />
+            <FaInstagram style={{ width: 18, height: 18 }} />
           </a>
           <a
             href="#"
-            class="bg-white/20 p-3 rounded-full hover:bg-white/30 transition"
+            class="bg-white/20 p-2 sm:p-3 rounded-full hover:bg-white/30 transition"
           >
-            <FaLinkedinIn style={{ width: 20, height: 20 }} />
+            <FaLinkedinIn style={{ width: 18, height: 18 }} />
           </a>
           <a
             href="#"
-            class="bg-white/20 p-3 rounded-full hover:bg-white/30 transition"
+            class="bg-white/20 p-2 sm:p-3 rounded-full hover:bg-white/30 transition"
           >
-            <FaGithub style={{ width: 20, height: 20 }} />
+            <FaGithub style={{ width: 18, height: 18 }} />
           </a>
         </div>
       </div>
     </div>
 
     <!-- Contact Form Side -->
-    <div class="lg:col-span-3 p-8 lg:p-12">
-      <h3 class="text-2xl font-bold text-gray-900 mb-8">Send a Message</h3>
+    <div class="lg:col-span-3 p-6 sm:p-8 lg:p-12">
+      <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-6 sm:mb-8">
+        Send a Message
+      </h3>
 
       <form
         id="contact-form"
         action="https://formspree.io/f/mzzrnalz"
         method="POST"
-        class="space-y-6"
+        class="space-y-4 sm:space-y-6"
       >
         <input
           type="text"
